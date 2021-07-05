@@ -1,22 +1,22 @@
 var express= require("express")
-var app= express.Router()
+var router= new express.Router()
 var signupModal=require("../modal/signup")
 var adminModal=require("../modal/admin")
 
-app.get("/",function(request, response){
+router.get("/",function(request, response){
     response.send("My name is Saksham Gupta")
 })
-app.get("/login",function(request, response){
+router.get("/login",function(request, response){
     response.send("I am a login page")
 })
 
-app.get("/signup",function(request, response){
+router.get("/signup",function(request, response){
     response.send("Sign Up!")})
 
-app.get("/admin",function(request, response){
+router.get("/admin",function(request, response){
     response.send("Admin powers!")})
 
     
 
 
-module.exports=app
+module.exports=router

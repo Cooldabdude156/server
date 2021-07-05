@@ -34,3 +34,6 @@ Frontend and backend interact with each other using API calling system.
 API- Application programing interface.
 Package.json- It gives all the dependences required to develop the API(Application Programming interface). It is created by Command Prompt using npm init
 You need to install framework express.js.
+
+Use "POST" to save data in a database
+Use "GET" to take data from the database
